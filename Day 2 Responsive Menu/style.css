@@ -91,28 +91,10 @@ a.action-btn:active{
 
 
 
-/* Responsividade */
-
-@media(max-width: 900px){
-    div.nav ul.links,
-    div.nav a.action-btn{
-        display: none;
-    }
-
-    div.nav div.toggle-btn{
-        display: block;
-    }
-
-    .drop-menu{
-        display: block;
-    }
-}
-
-
-
 /* Drop Menu */
 
 .drop-menu{
+    display: none;
     background-color: rgba(255, 255, 255, 0.1);
     position: absolute;
     top: 60px;
@@ -137,8 +119,55 @@ a.action-btn:active{
 }
 
 .drop-menu .action-btn{
-    width: 90%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+
+
+/* Main */
+
+section.title{
+    height: calc(100vh - 60px);
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    text-align: center;
+    color: white;
+}
+
+section.title h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+section.title p{
+    padding-bottom: 15rem;
+}
+
+
+/* Responsividade */
+
+@media(max-width: 900px){
+    div.nav ul.links,
+    div.nav a.action-btn{
+        display: none;
+    }
+
+    div.nav div.toggle-btn{
+        display: block;
+    }
+
+    .drop-menu{
+        display: block;
+    }
+}
+
+@media(max-width: 550px){
+    .drop-menu{
+        left: 2rem;
+        width: unset;
+    }
 }
