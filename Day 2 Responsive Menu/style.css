@@ -1,0 +1,94 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800&display=swap');
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+
+body{
+    height: 100vh;
+    background-color: black;
+    background-image: url(images/background.jpg);
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-size: 1rem;
+}
+
+a:hover{
+    color: rgb(175, 130, 250);
+}
+
+
+
+/* Header */
+
+header{
+    position: relative;
+    padding: 0 2rem;
+}
+
+div.nav{
+    width: 100%;
+    max-width: 1200px;
+    height: 60px;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div.nav div.logo a{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+div.nav ul.links{
+    display: flex;
+    gap: 2rem;
+}
+
+div.nav div.toggle-btn{
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none;
+}
+
+a.action-btn{
+    color: white;
+    background-color: rgb(175, 130, 250);
+    padding: 0.5rem 1rem;
+    border: none;
+    outline: none;
+    border-radius: 20px;
+    font-size: 0.8rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: scale 0.2 ease;
+}
+
+a.action-btn:hover{
+    scale: 1.05;
+    color: white;
+}
+
+a.action-btn:active{
+    scale: 0.95;
+}
+
+
+
+/* Responsividade */
