@@ -23,7 +23,10 @@ header{
 }
 
 body{
-    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
     background-color: black;
     background-image: url(images/background.jpg);
     background-size: contain;
@@ -88,4 +91,32 @@ body{
 
 .login-btn:active{
     scale: 0.95;
+}
+
+
+
+/* Login */
+
+.wrapper{
+    position: relative;
+    width: 400px;
+    height: 440px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .5);
+    border-radius: 20px;
+    backdrop-filter: blur(20px);
+    box-shadow: 0 0 30px rgba(0, 0, 0, .5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper .form-box{
+    width: 100%;
+    padding: 40px;
+}
+
+.form-box h2{
+    font-size: 2em;
+    text-align: center;
 }
