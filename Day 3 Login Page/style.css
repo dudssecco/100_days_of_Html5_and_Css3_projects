@@ -10,65 +10,82 @@
     font-family: 'Poppins', sans-serif;
 }
 
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 20px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 99;
+}
+
 body{
     height: 100vh;
     background-color: black;
     background-image: url(images/background.jpg);
-    background-size: cover;
+    background-size: contain;
     background-repeat: no-repeat;
-    background-position: top center;
+    background-position: center center;
 }    
 
-header{
-    background-color: transparent;
-    padding: 1rem;
+/* Menu */
+
+.logo a{
+    font-size: 1.5em;
+    color: white;
+    user-select: none;
+    text-decoration: none;
 }
 
+.menu a{
+    position: relative;
+    font-size: 1.2em;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    margin-left: 70px;
+}
 
-    /* Menu-Nav */
-
-.menu{
-    background-color: transparent;
+.menu a::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -6px;
     width: 100%;
-    height: 60px;
-    padding: 10px;
-    padding-inline: 50px;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    height: 3px;
+    border-radius: 5px;
+    background-color: white;
+    transform: scaleX(0);
+    transition: .5s;
 }
 
-.menu > .logo{
-    background-color: transparent;
-    padding: 1rem;
+.menu a:hover::after{
+    transform: scaleX(1);
 }
 
-.menu > .logo > a{
-    color: white;
-    text-decoration: none;
-    font-size: 2em;
-    font-weight: bold;
-}
-
-.nav{
-    background-color: transparent;
-}
-
-.nav a{
-    color: white;
-    font-size: 1em;
-    text-decoration: none;
-    padding: 30px;
-}
-
-.nav .login-btn{
-    margin-inline: 1em;
-    padding: 0.5em;
-    width: 10em;
-    border: none;
-    border-radius: 25px;
-    background-color: #6e5e8f;
-    color: white;
+.login-btn{
+    width: 180px;
+    height: 50px;
+    background: transparent;
+    border: 2px solid transparent;
+    outline: none;
+    border-radius: 50px;
+    cursor: pointer;
     font-size: 1.1em;
-    box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.473);
+    font-weight: 500;
+    color: white;
+    background-color: #9bddaf;
+    margin-left: 70px;
+    transition: .2s ;
+}
+
+.login-btn:hover{
+    scale: 1.05;
+}
+
+.login-btn:active{
+    scale: 0.95;
 }
