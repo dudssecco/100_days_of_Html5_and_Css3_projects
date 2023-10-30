@@ -203,6 +203,7 @@ body{
 .remember-forgot a{
     color: #193F34;
     text-decoration: none;
+    font-weight: 600;
 }
 
 .remember-forgot a:hover{
@@ -217,7 +218,7 @@ body{
     outline: none;
     border-radius: 6px;
     cursor: pointer;
-    color: #0e241e;
+    color: #458070;
     font-size: 1em;
     font-weight: 500;
     margin-top: 15px;
